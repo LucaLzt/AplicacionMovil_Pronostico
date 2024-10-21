@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/primary_layout"
+        />
+
+    <TextView
+        android:id="@+id/tvUbicacionCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ahora en"
+        android:textColor="?attr/android:textColor"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivImagenClima"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tvGradosCurrent"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:textColor="?attr/android:textColor"
+                android:textSize="90sp"
+                />
+
+            <TextView
+                android:id="@+id/tvCondicionCurrent"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/android:textColor"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/tvMaxMin"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tvSensacionTermicaCurrent"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:gravity="left"
+                />
+
+            <TextView
+                android:id="@+id/tvHumedadCurrent"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:gravity="left"
+                />
+
+            <TextView
+                android:id="@+id/tvVientoCurrent"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horas del día"
+        android:textSize="20sp"
+        android:textColor="?attr/android:textColor"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rvWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_weather">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historial"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/android:textColor"
+        android:padding="18dp"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar Por Ubicación"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/android:textColor"
+        android:padding="18dp"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        />
+
+</LinearLayout>

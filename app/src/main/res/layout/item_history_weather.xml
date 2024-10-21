@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+
+    <!-- Imagen del clima -->
+    <ImageView
+        android:id="@+id/ivHistorialImagenClima"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Contenedor de la información textual -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- DIA -->
+        <TextView
+            android:id="@+id/tvHistorialFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvProximaHora"
+            android:textColor="@color/whiteDay"
+            />
+
+        <!-- MAXIMA Y MINIMA -->
+        <TextView
+            android:id="@+id/tvHistorialMaxMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvProximaTemperatura"
+            android:textColor="@color/whiteDay"
+            />
+
+        <!-- CONDICION -->
+        <TextView
+            android:id="@+id/tvHistorialCondicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvProximaCondicion"
+            android:textColor="@color/whiteDay"
+            />
+
+        <!-- CHANCE DE LLUVIA -->
+        <TextView
+            android:id="@+id/tvHistorialProbLluviaHumedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvProximaProbLluviaHumedad"
+            android:textColor="@color/whiteDay"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

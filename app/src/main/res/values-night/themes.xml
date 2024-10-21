@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TpSeminarioLenguajes" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores Modo Noche -->
+        <item name="background">@drawable/background_gradient_night</item>
+        <item name="android:toolbarStyle">@color/toolbarColorNight</item>
+        <item name="android:textColor">@color/blackNight</item>
+        <item name="colorPrimary">@color/primaryNight</item>
+        <item name="colorPrimaryDark">@color/primaryNight</item>
+        <item name="android:textColorHint">@color/hintNight</item>
+        <item name="colorControlNormal">@color/checkboxTintNight</item>
+    </style>
+</resources>

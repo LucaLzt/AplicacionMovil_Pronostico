@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/etBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Ubicación"
+        android:textColor="?attr/android:textColor"
+        android:textColorHint="?attr/android:textColorHint"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_corner"
+        android:padding="18dp"
+        android:inputType="text"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/android:textColor"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        />
+
+</LinearLayout>

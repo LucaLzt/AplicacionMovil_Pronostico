@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnModo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Botón para modo noche/dia"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_mode"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="-40dp"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_account"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="?attr/android:textColor"
+            android:layout_marginBottom="30dp"
+            />
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Usuario"
+            android:textColor="?attr/android:textColor"
+            android:textColorHint="?attr/android:textColorHint"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="text"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/etContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Contraseña"
+            android:textColor="?attr/android:textColor"
+            android:textColorHint="?attr/android:textColorHint"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/android:textColor"
+                android:padding="15dp"
+                android:layout_marginTop="25dp"
+                android:textSize="20sp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Registrar Usuario"
+                android:backgroundTint="@color/invisible"
+                android:textColor="?attr/android:colorPrimary"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/btnRecordarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recordar Usuario"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:buttonTint="?attr/colorControlNormal"
+            android:textColor="?attr/android:textColor"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

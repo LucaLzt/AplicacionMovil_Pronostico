@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores Modo Dia -->
+    <color name="blackDay">#212121</color> <!-- Texto principal más suave -->
+    <color name="whiteDay">#FFFFFF</color> <!-- Blanco puro para textos sobre fondos oscuros -->
+    <color name="primaryLight">#42A5F5</color> <!-- Azul claro para botones -->
+    <color name="primaryDark">#0D47A1</color> <!-- Azul oscuro para texto y bordes -->
+    <color name="backgroundDay">#BBDEFB</color> <!-- Azul claro para elementos secundarios -->
+    <color name="hintDay">#90A4AE</color> <!-- Gris suave para hints en los EditTexts -->
+    <color name="checkboxTintDay">#42A5F5</color> <!-- Tint del CheckBox para mantener consistencia -->
+    <color name="toolbarColorDay">#0D47A1</color> <!-- Color del Toolbar -->
+    <color name="invisible">#00000000</color> <!-- Color invisible -->
+
+    <!-- Colores Modo Noche -->
+    <color name="blackNight">#E0E0E0</color> <!-- Texto en un gris claro para contraste -->
+    <color name="whiteNight">#FFFFFF</color> <!-- Blanco puro para textos -->
+    <color name="primaryNight">#1F4068</color> <!-- Azul oscuro para botones y acentos -->
+    <color name="backgroundNight">#121212</color> <!-- Fondo casi negro para elementos secundarios -->
+    <color name="hintNight">#8A8A8A</color> <!-- Gris oscuro para hints en los EditTexts -->
+    <color name="checkboxTintNight">#1F4068</color> <!-- Tint del CheckBox en azul oscuro -->
+    <color name="toolbarColorNight">#1F4068</color> <!-- Color del Toolbar -->
+
+</resources>
