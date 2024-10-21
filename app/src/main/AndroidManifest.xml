@@ -21,9 +21,6 @@
             android:name=".fragments.BusquedaActivity"
             android:exported="false" />
         <activity
-            android:name=".fragments.BusquedaActivity"
-            android:exported="false" />
-        <activity
             android:name=".activities.LoginActivity"
             android:exported="true">
             <intent-filter>
